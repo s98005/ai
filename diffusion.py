@@ -139,4 +139,5 @@ with gr.Blocks(css=".gradio-container {background-color: #FAFAFA; padding: 20px;
         outputs=[gallery, seed_info]
     )
 
-    demo.launch(debug=True)
+    demo.launch(server_port=int(os.getenv("PORT", 7860)), server_name="0.0.0.0", debug=True)
+    print("Service started and listening on port", os.getenv("PORT", 7860))
