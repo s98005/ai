@@ -1,0 +1,10 @@
+# 忽略 Python 編譯檔案
+__pycache__/
+*.pyc
+
+# 忽略環境設定
+.env
+
+# 忽略虛擬環境資料夾（如有）
+venv/
+sd-env/
